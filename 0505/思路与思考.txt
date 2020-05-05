@@ -1,0 +1,23 @@
+https://epay.10010.com/auth/login
+
+1.抓包
+2.抓包之后找到login的包，在找到包之后点击checksubmit.js
+3.进入之后在那个函数中
+	364行中得到 公钥
+	370行取到用户输入的密码
+	371行中进行加密（密码，公钥）
+	377行将加密之后的密码复制给id为loginPwd的元素
+	412提交表单
+
+
+4.我们找到371行的加密函数
+执行
+5发现 navigator is not defined
+var navigator = {};
+6发现 window is not defined   //window 是浏览器的全局对象
+var window = this;  //this是当前调试器的全局对象
+7将代码放入到e语言中进行调用
+
+
+
+py调用ras.js的例子页放在其中
