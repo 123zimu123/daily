@@ -1,1 +1,1 @@
-0505 daily file record
+0505 daily file record example
