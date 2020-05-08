@@ -1,0 +1,11 @@
+js逆向- console插桩-fd替换（没自己做，学习了一下）
+
+http://tms.newchinalife.com/ex/app/login/login.jsp
+rsa
+比较简单的网站
+抓post包 直接点进去
+直接能看到传入明文代码和进行加密的函数
+step into function（f11）进去
+发现return了一个函数执行的结果
+再点进去，发现加密框架
+全部复制过去，加上navigator和window
